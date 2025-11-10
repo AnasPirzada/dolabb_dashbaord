@@ -293,6 +293,113 @@ export const notifications = [
   },
 ];
 
+// Notification Templates
+export const notificationTemplates = {
+  // Account Management
+  account_registration: {
+    type: 'system_alert',
+    title: 'Welcome to Dolabb!',
+    message: 'Your account has been successfully registered. Welcome to our platform!',
+    targetAudience: 'all',
+    category: 'account',
+  },
+  password_change: {
+    type: 'system_alert',
+    title: 'Password Changed Successfully',
+    message: 'Your password has been changed successfully. If you did not make this change, please contact support immediately.',
+    targetAudience: 'all',
+    category: 'account',
+  },
+  
+  // Buyer Journey
+  buyer_offer_submitted: {
+    type: 'buyer_message',
+    title: 'Offer Submitted',
+    message: 'Your offer of ${offerAmount} for ${itemName} has been submitted successfully. The seller will be notified.',
+    targetAudience: 'buyers',
+    category: 'buyer_journey',
+  },
+  buyer_offer_accepted: {
+    type: 'buyer_message',
+    title: 'Offer Accepted!',
+    message: 'Great news! Your offer of ${offerAmount} for ${itemName} has been accepted by the seller. Proceed with payment to complete the purchase.',
+    targetAudience: 'buyers',
+    category: 'buyer_journey',
+  },
+  buyer_offer_rejected: {
+    type: 'buyer_message',
+    title: 'Offer Not Accepted',
+    message: 'Unfortunately, your offer of ${offerAmount} for ${itemName} was not accepted by the seller. You can make a new offer or browse other items.',
+    targetAudience: 'buyers',
+    category: 'buyer_journey',
+  },
+  buyer_purchase_confirmation: {
+    type: 'buyer_message',
+    title: 'Purchase Confirmed',
+    message: 'Your purchase of ${itemName} for ${amount} has been confirmed. The seller will prepare your item for shipment.',
+    targetAudience: 'buyers',
+    category: 'buyer_journey',
+  },
+  buyer_item_shipped: {
+    type: 'buyer_message',
+    title: 'Item Shipped',
+    message: 'Great news! Your item ${itemName} has been shipped by the seller. Track your shipment using the tracking number: ${trackingNumber}',
+    targetAudience: 'buyers',
+    category: 'buyer_journey',
+  },
+  buyer_feedback_reminder: {
+    type: 'buyer_message',
+    title: 'Leave Feedback',
+    message: 'Your purchase of ${itemName} has been completed. Please leave feedback to help other buyers and sellers.',
+    targetAudience: 'buyers',
+    category: 'buyer_journey',
+  },
+  
+  // Seller Journey
+  seller_offer_received: {
+    type: 'seller_message',
+    title: 'New Offer Received',
+    message: 'You have received a new offer of ${offerAmount} for ${itemName} from ${buyerName}. Review and respond to the offer.',
+    targetAudience: 'sellers',
+    category: 'seller_journey',
+  },
+  seller_offer_accepted: {
+    type: 'seller_message',
+    title: 'Offer Accepted',
+    message: 'You have accepted the offer of ${offerAmount} for ${itemName}. Wait for the buyer to complete payment.',
+    targetAudience: 'sellers',
+    category: 'seller_journey',
+  },
+  seller_offer_rejected: {
+    type: 'seller_message',
+    title: 'Offer Declined',
+    message: 'You have declined the offer of ${offerAmount} for ${itemName}. The buyer has been notified.',
+    targetAudience: 'sellers',
+    category: 'seller_journey',
+  },
+  seller_payment_received: {
+    type: 'seller_message',
+    title: 'Payment Received',
+    message: 'Payment of ${amount} has been received for ${itemName}. Please prepare the item for shipment.',
+    targetAudience: 'sellers',
+    category: 'seller_journey',
+  },
+  seller_shipment_reminder: {
+    type: 'seller_message',
+    title: 'Ship Item Reminder',
+    message: 'Please ship ${itemName} to the buyer. Payment has been received and the buyer is waiting for shipment.',
+    targetAudience: 'sellers',
+    category: 'seller_journey',
+  },
+  seller_feedback_received: {
+    type: 'seller_message',
+    title: 'Feedback Received',
+    message: 'You have received feedback from ${buyerName} for your sale of ${itemName}. Check your seller profile to view it.',
+    targetAudience: 'sellers',
+    category: 'seller_journey',
+  },
+};
+
 export const termsAndConditions = {
   version: '2.1',
   lastUpdated: '2024-11-01',
