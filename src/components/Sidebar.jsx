@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { FaBox, FaChartBar, FaUsers } from 'react-icons/fa';
+import { FaBox, FaChartBar, FaUsers, FaHandshake } from 'react-icons/fa';
 import { HiX } from 'react-icons/hi';
 import { MdGavel, MdNotifications, MdPayment } from 'react-icons/md';
 import { NavLink } from 'react-router-dom';
@@ -12,6 +12,7 @@ const menuItems = [
   { path: '/transactions', label: 'Transactions & Payments', icon: MdPayment },
   { path: '/disputes', label: 'Disputes & Complaints', icon: MdGavel },
   { path: '/notifications', label: 'Notifications', icon: MdNotifications },
+  { path: '/affiliates', label: 'Affiliate Management', icon: FaHandshake },
 ];
 
 const Sidebar = ({ isOpen, setIsOpen }) => {

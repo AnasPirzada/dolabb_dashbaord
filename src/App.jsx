@@ -12,6 +12,7 @@ import ListingManagement from './pages/ListingManagement';
 import TransactionManagement from './pages/TransactionManagement';
 import DisputeManagement from './pages/DisputeManagement';
 import NotificationManagement from './pages/NotificationManagement';
+import AffiliateManagement from './pages/AffiliateManagement';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
             <Route path="transactions" element={<TransactionManagement />} />
             <Route path="disputes" element={<DisputeManagement />} />
             <Route path="notifications" element={<NotificationManagement />} />
+            <Route path="affiliates" element={<AffiliateManagement />} />
           </Route>
         </Routes>
       </Router>
